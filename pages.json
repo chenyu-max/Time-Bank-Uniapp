@@ -1,0 +1,119 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/history/history",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/report/report",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/addTaskDetail/addTaskDetail",
+			"style": {
+				"navigationBarTitleText": "发起任务审核详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/overTaskDetail/overTaskDetail",
+			"style": {
+				"navigationBarTitleText": "任务申报审核详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/self/self",
+			"style": {
+				"navigationBarTitleText": "用户信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/self/report",
+			"style": {
+				"navigationBarTitleText": "举报",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/self/reportHistory",
+			"style": {
+				"navigationBarTitleText": "举报记录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/reportDetail/reportDetail",
+			"style": {
+				"navigationBarTitleText": "举报详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/self/selfSetting",
+			"style": {
+				"navigationBarTitleText": "个人信息设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/userInfo/login/login",
+			"style": {
+				"navigationBarTitleText": "用户登录",
+				"enablePullDownRefresh": false
+			},
+			"name": "login"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "时间银行APP",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#007aff",
+		"backgroundColor": "#fff",
+		"list": [ // 显示页面信息,包含了tabbar需要跳转的所有的页面信息
+			{
+				"pagePath": "pages/index/index", // 页面路径
+				"iconPath": "static/img/1.svg", // 默认图片
+				"selectedIconPath": "static/img/1-active.svg", // 选中图片
+				"text": "发起审核" // 文字描述信息
+			},
+			{
+				"pagePath": "pages/history/history",
+				"iconPath": "static/img/2.svg", // 默认图片
+				"selectedIconPath": "static/img/2-active.svg", // 选中图片
+				"text": "申报审核"
+			},
+			{
+				"pagePath": "pages/report/report",
+				"iconPath": "static/img/3.svg", // 默认图片
+				"selectedIconPath": "static/img/3-active.svg", // 选中图片
+				"text": "举报审核"
+			},
+			{
+				"pagePath": "pages/self/self",
+				"iconPath": "static/img/4.svg", // 默认图片
+				"selectedIconPath": "static/img/4-active.svg", // 选中图片
+				"text": "我的"
+			}
+		]
+	}
+}
